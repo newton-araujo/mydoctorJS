@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <title>MyDoctor</title>
+</head>
+<body>
+
+    <!--Container main-->
+    <section class="container">
+        
+        <!--Imagem-->
+        <div class="img-main">
+            <img src="../assets/img/main.png" alt="img-hospital" srcset="">
+            <h1>MyDoctor</h1>
+        </div>
+
+        <!--Input of user-->
+        <div class="container_date">
+
+            <div class="container_input">
+                <div class="user">
+                    <i class="fa-solid fa-user" id="icon_user"></i>
+                    <input type="text" id="user" placeholder="USER">
+                </div>
+
+                <div class="password">
+                    <i class="fa-solid fa-lock" id="icon_password"></i>
+                    <input type="password" id="password" placeholder="PASSWORD">
+                    <i class="fas fa-eye" id="togglePassword" onclick="togglePasswordVisibility()"></i>
+                </div>
+            </div>
+
+            <!--Buttons-->
+            <div class="buttons">
+                <div class="btn_enter_register">
+                    <button class="Enter" onclick="accessSystem()">ENTER</button>
+                    <button class="Register">REGISTER</button>
+                </div>
+                <button class="i_forgot">FORGOT MY PASSWORD</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2024 MyDoctor. Todos os direitos @DevLevelUp.</p>
+    </footer>
+    
+    <script src="../JS/index.js"></script>
+
+</body>
+</html>

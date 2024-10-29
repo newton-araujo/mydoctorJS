@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Protest+Guerrilla&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 700px;
+    box-shadow: 4px 2px 50px black ;
+    border-radius: 20px;
+}
+/*
+container img, img e title
+*/
+.img-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    max-height: 380px;
+    background-color: rgba(255, 255, 255, 0.432);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.img-main img {
+    width: 500px;
+}
+
+.img-main h1 {
+    width: 300px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Archivo Black", sans-serif;
+}
+
+/*
+iNPUTS - USER AND PASSWORD
+*/
+
+.container_date {
+    width: 500px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(90, 140, 247, 0.452);
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+.container_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 100px;
+    margin-top: 2rem;
+}
+
+.user, .password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 250px;
+    height: 35px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.user #user{
+    width: 220px;
+    height: 35px;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Archivo Black", sans-serif;
+}
+
+#password {
+    width: 190px;
+    height: 35px;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Archivo Black", sans-serif;
+}
+
+
+.user #icon_user{
+    margin-left: 10px;
+    padding: 2px;
+    color: rgba(42, 46, 56, 0.452);
+}
+
+#togglePassword {
+    margin-left: 5px;
+    color: rgba(42, 46, 56, 0.452);
+    cursor: pointer;
+}
+
+#icon_password {
+    margin-right: px;
+    color: rgba(42, 46, 56, 0.452);
+}
+
+
+#user:focus, #password:focus {
+    outline: none;
+}
+
+
+/*
+BUTTONS - ENTER, REGISTER AND FORGOT MY
+*/
+
+.buttons {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn_enter_register {
+
+    width: 400px;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: .5rem;
+}
+
+.btn_enter_register .Enter, .Register{
+    width: 130px;
+    padding: 7px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+    font-family: "Archivo Black", sans-serif;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.Enter {
+    background-color: rgba(27, 199, 12, 0.562);
+    color: white;
+}
+
+.Register {
+    background-color: rgba(31, 12, 199, 0.521);
+    color: white;
+}
+.i_forgot {
+    width: 200px;
+    padding: 7px;
+    font-family: "Archivo Black", sans-serif;
+    background-color: rgba(170, 192, 241, 0.452);
+    color: rgb(252, 0, 0);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+footer {
+    margin-top: 20px;
+}

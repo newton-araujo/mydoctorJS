@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Protest+Guerrilla&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Archivo Black", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+}
+
+/* Container main */
+.container-main {
+    display: flex;
+    align-items: center;
+    width: 1800px;
+    height: 900px;
+    background-color:rgb(181,203,251);
+    border-radius: 1rem;
+    box-shadow: 2px 4px 50px black;
+}
+/* Aside main */
+.aside {
+    width: 400px;
+    height: 900px;
+    border-radius: 1rem 0rem 0rem 1rem;
+    background-color: rgba(37, 37, 37, 0.473);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    width: 400px;
+    height: 80px;
+    background-color: white;
+    border-radius: 1rem 0rem 0rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.548);
+}
+
+.title img {
+    width: 80px;
+}
+
+.title h1 {
+    font-size: 30px;
+    
+}
+
+.infor-patient {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.infor-patient .inf {
+    display: flex;
+    width: 350px;
+    height: 40px;
+    border-radius: 1rem;
+    background-color: white;
+
+}
+
+.icon {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    width: 50px;
+    background-color:rgb(181,203,251);
+    border-radius: 1rem 0rem 0rem 1rem;
+    color: white;
+
+}
+
+.description {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    width: 200px;
+    color: rgba(0, 0, 0, 0.603);
+}
+
+.p_value {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 130px;
+    color: rgba(0, 0, 0, 0.603);
+    border: none;
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+
+.inf-sex{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.603);
+    padding: 1.3rem;
+}
+
