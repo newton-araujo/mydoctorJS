@@ -3,61 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualizador de Senha</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>Estilização do Textarea</title>
+    <style>
+        /* Container centralizado */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+
+        /* Estilos do textarea */
+        .textarea-estilizado {
+            width: 300px;
+            height: 150px;
+            padding: 12px 20px;
+            font-size: 16px;
+            color: #333;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            resize: none; /* Remove o redimensionamento manual */
+            line-height: 1.5;
+            transition: border-color 0.3s ease;
+        }
+
+        /* Efeito ao focar no textarea */
+        .textarea-estilizado:focus {
+            border-color: #4a90e2;
+            box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+        }
+
+        /* Estilos para placeholder */
+        .textarea-estilizado::placeholder {
+            color: #888;
+            font-style: italic;
+        }
+    </style>
 </head>
-<style>
-    body {
-    font-family: Arial, sans-serif;
-}
-
-.input-container {
-    position: relative;
-    display: inline-block;
-}
-
-#password {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 300px;
-    font-size: 16px;
-}
-
-#togglePassword {
-    position: absolute;
-    right: 10px; /* Posiciona o ícone à direita */
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: #888; /* Cor do ícone */
-}
-</style>
 <body>
-    <div class="input-container">
-        <input type="password" id="password" placeholder="Digite sua senha">
-        <i class="fas fa-eye" id="togglePassword"></i> <!-- Ícone do visualizador de senha -->
+    <div class="container">
+        <textarea class="textarea-estilizado" placeholder="Digite seu texto aqui"></textarea>
     </div>
-
-    <script>
-        // Seleciona o input e o ícone de visualização de senha
-    const passwordInput = document.getElementById('password');
-    const togglePassword = document.getElementById('togglePassword');
-
-    // Adiciona um evento de clique ao ícone
-    togglePassword.addEventListener('click', function () {
-        // Alterna o tipo de input entre 'password' e 'text'
-        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-        passwordInput.setAttribute('type', type);
-        
-        // Alterna o ícone entre olho aberto e fechado
-        this.classList.toggle('fa-eye');
-        this.classList.toggle('fa-eye-slash');
-});
-
-
-
-    </script>
 </body>
 </html>

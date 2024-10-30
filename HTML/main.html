@@ -12,24 +12,24 @@
     <section class="container-main">
 
         <aside class="aside">
-            
+            <!--Title-->
             <div class="title">
                 <img src="../assets/img/desenho-de-batida-cardiaca.png" alt="coração">
                 <h1>MY INFORMATION</h1>
             </div>
-
+            <!--User Information-->
             <div class="infor-patient">
                 
-                <div class="inf">
+                <div class="inf"> <!--NAME-->
                     <i class="fa-solid fa-user icon"></i>
-                    <p class="description">NAME:</p>
-                    <input type="text" class="p_value" value="PEDRO" disabled="true">
+                    <p class="description">NAME:</p> 
+                    <input type="text" class="p_value" disabled="true" id="name_patient">
                 </div>
 
-                <div class="inf-sex">
-
+                <div class="inf-sex"> <!--GENDER-->
+                    <p>INFORM YOUR GENDER</p>
                     <label>
-                        <input type="radio" name="gender" id="sex-m" value="male">
+                        <input type="radio" name="gender" id="sex-m" value="male" >
                         MALE
                     </label>
 
@@ -40,43 +40,61 @@
 
                 </div>
 
-                <div class="inf">
+                <div class="inf"> <!--AGE-->
                     <i class="fa-solid fa-user icon"></i>
                     <p class="description">AGE:</p>
-                    <input type="text" class="p_value" value="18" disabled="true">
+                    <input type="text" class="p_value" disabled="true" id="age_patient">
                 </div>
 
-                <div class="inf">
+                <div class="inf"><!--DATA OF BIRTH-->
                     <i class="fa-solid fa-cake-candles icon"></i>
                     <p class="description">DATA OF BIRTH:</p>
-                    <input type="text" class="p_value" value="12-12-2000" disabled="true">
+                    <input type="text" class="p_value"  disabled="true" id="dt_birth_patient">
                 </div>
 
-                <div class="inf">
+                <div class="inf"><!--WEIGH-->
                     <i class="fa-solid fa-weight-scale icon"></i>
                     <p class="description">WEIGH:</p>
-                    <input type="text" class="p_value" value="80" disabled="true">
+                    <input type="text" class="p_value" disabled="true" id="weigh_patient">
                 </div>
                 
-                <div class="inf">
+                <div class="inf"><!--HEIGHT-->
                     <i class="fa-solid fa-person icon"></i>
                     <p class="description">HEIGHT:</p>
-                    <input type="text" class="p_value" value="1.70" disabled="true">
+                    <input type="text" class="p_value" disabled="true" id="heigth_patient">
                 </div>
 
-                <div class="inf">
-                    <i class="fa-solid fa-calculator icon"></i>
+                <div class="inf"><!--IMC-->
+                    <i class="fa-solid fa-calculator icon" id="imc"></i>
                     <p class="description">IMC:</p>
-                    <input type="text" class="p_value" value="" disabled="true">
+                    <input type="text" class="p_value" disabled="true">
                 </div>
 
+                <div class="inf-medic"> <!--CONTINUOUS MEDICATIONS?-->
+                    <p>CONTINUOUS MEDICATIONS?</p>
+                    <label>
+                        <input type="radio" name="medic" id="medic-yes" value="yes">
+                        YES
+                    </label>
+
+                    <label>
+                        <input type="radio" name="medic" id="medic-no" value="no">
+                        NO
+                    </label>
+
+                    <p>INFORM BELOW:</p>
+                    <textarea type="text" name="description_medic" id="d_medic" disabled="true"></TExtarea>
+                </div>
                 
-      
-             
             </div>
 
-            <div class="btns">
-
+            <div class="btns ">
+                <button class="btn edit" id="edit">
+                    <i class="fa-regular fa-pen-to-square icon-e"></i>EDIT
+                </button>
+                <button class="btn save">
+                    <i class="fa-solid fa-floppy-disk icon-s"></i>SAVE
+                </button>
             </div>
     
         </aside>
